@@ -24,6 +24,7 @@ Each community agent considers:
 1. Disposable income of its residents
 2. Discretionary consumption patterns
 3. Accessibility by car vs. transit
+<img width="3694" height="1526" alt="framework" src="https://github.com/user-attachments/assets/303c88e9-3cf7-42df-bf9a-483b8d4c60bf" />
 
 ---
 
