@@ -2,3 +2,12 @@ openai>=1.0.0
 anthropic>=0.25.0
 pandas>=1.5.0
 python-dotenv>=1.0.0
+
+# Analysis dependencies (for analyze.ipynb and analyze_regression.ipynb)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scipy>=1.10.0
+statsmodels>=0.14.0
+scikit-learn>=1.3.0
+vaderSentiment>=3.3.2
+notebook>=7.0.0
