@@ -277,16 +277,8 @@ A single LLM agent representing "the average resident" of the city votes, instea
 
 ---
 
-## Cost note
-
-Each simulation round queries the LLM once per community:
-- **Chicago**: 77 API calls/round × 10 rounds = 770 calls
-- **Houston**: 88 API calls/round × 10 rounds = 880 calls
-
-Each call uses ~2,000 input tokens and up to 2,048 output tokens. Estimate your API costs before running all experiments.
-
----
-
 ## Citation
 
 If you use this code or data, please cite the accompanying paper.
+
+Feel free to reach out if you have any questions, suggestions, or want to collaborate!
