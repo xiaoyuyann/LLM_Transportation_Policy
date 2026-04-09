@@ -260,9 +260,20 @@ def _compile_community_responses(city: str, round_dir: Path) -> Path:
     return csv_path
 
 
-def _aggregate_votes(csv_path: Path, mode: str, irv_output: Path) -> dict:
-    """Read compiled CSV, aggregate votes, and save IRV/approval summary JSON."""
+def _aggregate_votes(csv_path: Path, mode: str, irv_output: Path) -> dict | None:
+    """Read compiled CSV, aggregate votes, and save IRV/approval summary JSON.
+
+    Returns None if the CSV is missing or contains no valid vote rows.
+    """
+    if not csv_path.exists():
+        print(f"  [WARN] CSV not found, skipping vote aggregation: {csv_path.name}")
+        return None
+
     df = pd.read_csv(csv_path)
+    if df.empty or "vote" not in df.columns:
+        print("  [WARN] No vote data in CSV, skipping vote aggregation.")
+        return None
+
     df["vote_list"] = df["vote"].apply(ast.literal_eval)
     votes = df["vote_list"].tolist()
 
@@ -348,30 +359,33 @@ def run_simulation(
 
         print(f"\n--- Round {i}/{rounds} ---")
 
-        if mode == "average":
-            _run_average_round(city, client, policy_options_joined, round_dir, i)
-            # For average mode, compile a single-row CSV for consistency
-            resp = _compile_average_responses(round_dir, i)
-            if resp:
-                vote = resp.get("vote", [])
-                row = {
-                    "community_area": resp.get("community_area", ""),
-                    "disposable_income": resp.get("thinking", {}).get("disposable_income", ""),
-                    "discretionary_consumption": resp.get("thinking", {}).get("discretionary_consumption", ""),
-                    "accessibility": resp.get("thinking", {}).get("accessibility", ""),
-                    "decision_rationale": resp.get("thinking", {}).get("decision_rationale", ""),
-                    "vote": str(vote),
-                }
-                for j, v in enumerate(vote[:5], start=1):
-                    row[f"rank{j}"] = v
-                csv_path = round_dir / "combined_voting_results.csv"
-                pd.DataFrame([row]).to_csv(csv_path, index=False)
-                print(f"  Vote: {vote}")
-        else:
-            _run_community_round(city, client, mode, policy_options_joined, round_dir, info_dir)
-            csv_path = _compile_community_responses(city, round_dir)
-            irv_path = round_dir / "irv_summary.json"
-            _aggregate_votes(csv_path, mode, irv_path)
+        try:
+            if mode == "average":
+                _run_average_round(city, client, policy_options_joined, round_dir, i)
+                resp = _compile_average_responses(round_dir, i)
+                if resp:
+                    vote = resp.get("vote", [])
+                    row = {
+                        "community_area": resp.get("community_area", ""),
+                        "disposable_income": resp.get("thinking", {}).get("disposable_income", ""),
+                        "discretionary_consumption": resp.get("thinking", {}).get("discretionary_consumption", ""),
+                        "accessibility": resp.get("thinking", {}).get("accessibility", ""),
+                        "decision_rationale": resp.get("thinking", {}).get("decision_rationale", ""),
+                        "vote": str(vote),
+                    }
+                    for j, v in enumerate(vote[:5], start=1):
+                        row[f"rank{j}"] = v
+                    csv_path = round_dir / "combined_voting_results.csv"
+                    pd.DataFrame([row]).to_csv(csv_path, index=False)
+                    print(f"  Vote: {vote}")
+            else:
+                _run_community_round(city, client, mode, policy_options_joined, round_dir, info_dir)
+                csv_path = _compile_community_responses(city, round_dir)
+                irv_path = round_dir / "irv_summary.json"
+                _aggregate_votes(csv_path, mode, irv_path)
+        except Exception as exc:
+            print(f"  [ERROR] Round {i} failed: {exc}")
+            traceback.print_exc()
 
         round_dirs.append(round_name)
 
