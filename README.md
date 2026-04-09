@@ -64,9 +64,13 @@ LLM-FFT/
 - An OpenAI API key (for GPT-4o experiments)
 - An Anthropic API key (for Claude experiments)
 
-Install dependencies:
+Create and activate a virtual environment, then install dependencies:
 
 ```bash
+python3 -m venv .venv
+source .venv/bin/activate        # macOS / Linux
+# .venv\Scripts\activate         # Windows
+
 pip install -r requirements.txt
 ```
 
@@ -76,6 +80,11 @@ Set up API keys:
 cp .env.example .env
 # Edit .env and fill in OPENAI_API_KEY and/or ANTHROPIC_API_KEY
 ```
+
+> **Every time you open a new terminal session**, re-activate the environment before running experiments:
+> ```bash
+> source .venv/bin/activate
+> ```
 
 ---
 
