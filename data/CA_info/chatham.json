@@ -1,0 +1,103 @@
+{
+    "community": "Chatham",
+    "population": {
+        "total_population": 31382,
+        "total_households": 15017,
+        "average_household_size": 2.1
+    },
+    "race": {
+        "white_non_hispanic": {
+            "count": 336,
+            "percent": 1.1
+        },
+        "hispanic_or_latino": {
+            "count": 783,
+            "percent": 2.5
+        },
+        "black_non_hispanic": {
+            "count": 29576,
+            "percent": 94.2
+        },
+        "asian_non_hispanic": {
+            "count": 111,
+            "percent": 0.4
+        },
+        "other_multiple_races": {
+            "count": 576,
+            "percent": 1.8
+        }
+    },
+    "car_ownership": {
+        "no_vehicle": {
+            "count": 4778,
+            "percent": 31.8
+        },
+        "one_vehicle": {
+            "count": 7046,
+            "percent": 46.9
+        },
+        "two_vehicles": {
+            "count": 2425,
+            "percent": 16.1
+        },
+        "three_or_more_vehicles": {
+            "count": 765,
+            "percent": 5.1
+        }
+    },
+    "travel_mode": {
+        "work_at_home": {
+            "count": 1879,
+            "percent": 14.7
+        },
+        "drive_alone": {
+            "count": 5762,
+            "percent": 45.0
+        },
+        "carpool": {
+            "count": 1219,
+            "percent": 9.5
+        },
+        "transit": {
+            "count": 3494,
+            "percent": 27.3
+        },
+        "walk_or_bike": {
+            "count": 209,
+            "percent": 1.6
+        },
+        "other": {
+            "count": 234,
+            "percent": 1.8
+        },
+        "mean_commute_time_minutes": 37.9
+    },
+    "income": {
+        "less_than_25000": {
+            "count": 4926,
+            "percent": 32.8
+        },
+        "25000_to_49999": {
+            "count": 3882,
+            "percent": 25.9
+        },
+        "50000_to_74999": {
+            "count": 2233,
+            "percent": 14.9
+        },
+        "75000_to_99999": {
+            "count": 1325,
+            "percent": 8.8
+        },
+        "100000_to_149999": {
+            "count": 1754,
+            "percent": 11.7
+        },
+        "150000_and_over": {
+            "count": 897,
+            "percent": 6.0
+        },
+        "median_income": 39348,
+        "per_capita_income": 28801
+    }
+}

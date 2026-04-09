@@ -1,0 +1,102 @@
+{
+  "community": "Mount Greenwood",
+  "population": {
+    "total": 19121,
+    "households": 7169,
+    "average_household_size": 2.6
+  },
+  "race": {
+    "White (Non-Hispanic)": {
+      "count": 16053,
+      "percent": 84.0
+    },
+    "Hispanic or Latino (of Any Race)": {
+      "count": 1836,
+      "percent": 9.6
+    },
+    "Black (Non-Hispanic)": {
+      "count": 337,
+      "percent": 1.8
+    },
+    "Asian (Non-Hispanic)": {
+      "count": 199,
+      "percent": 1.0
+    },
+    "Other/Multiple Races (Non-Hispanic)": {
+      "count": 696,
+      "percent": 3.6
+    }
+  },
+  "car_ownership": {
+    "No Vehicle": {
+      "count": 334,
+      "percent": 4.7
+    },
+    "1 Vehicle": {
+      "count": 2624,
+      "percent": 36.6
+    },
+    "2 Vehicles": {
+      "count": 3217,
+      "percent": 44.9
+    },
+    "3 or More Vehicles": {
+      "count": 994,
+      "percent": 13.9
+    }
+  },
+  "travel_mode": {
+    "Work at Home": {
+      "count": 648,
+      "percent": 7.4
+    },
+    "Drive Alone": {
+      "count": 7232,
+      "percent": 82.2
+    },
+    "Carpool": {
+      "count": 367,
+      "percent": 4.2
+    },
+    "Transit": {
+      "count": 367,
+      "percent": 4.2
+    },
+    "Walk or Bike": {
+      "count": 125,
+      "percent": 1.4
+    },
+    "Other": {
+      "count": 58,
+      "percent": 0.7
+    }
+  },
+  "income": {
+    "Less than $25,000": {
+      "count": 607,
+      "percent": 8.5
+    },
+    "$25,000 to $49,999": {
+      "count": 747,
+      "percent": 10.4
+    },
+    "$50,000 to $74,999": {
+      "count": 960,
+      "percent": 13.4
+    },
+    "$75,000 to $99,999": {
+      "count": 715,
+      "percent": 10.0
+    },
+    "$100,000 to $149,999": {
+      "count": 1703,
+      "percent": 23.8
+    },
+    "$150,000 and Over": {
+      "count": 2437,
+      "percent": 34.0
+    },
+    "Median Income": 113328,
+    "Per Capita Income": 47744
+  }
+}

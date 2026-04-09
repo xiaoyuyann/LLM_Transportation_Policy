@@ -1,0 +1,40 @@
+{
+  "community": "West Garfield Park",
+  "population": {
+    "total": 16374,
+    "households": 5910,
+    "average_household_size": 2.7
+  },
+  "race": {
+    "White (Non-Hispanic)": 2.1,
+    "Hispanic or Latino (of Any Race)": 5.4,
+    "Black (Non-Hispanic)": 91.9,
+    "Asian (Non-Hispanic)": 0.1,
+    "Other/Multiple Races (Non-Hispanic)": 0.5
+  },
+  "car_ownership": {
+    "No Vehicle Available": 38.7,
+    "1 Vehicle Available": 38.0,
+    "2 Vehicles Available": 16.3,
+    "3 or More Vehicles Available": 7.0
+  },
+  "travel_mode": {
+    "Work at Home": 7.9,
+    "Drive Alone": 54.0,
+    "Carpool": 5.1,
+    "Transit": 27.9,
+    "Walk or Bike": 2.9,
+    "Other": 2.2,
+    "Mean Commute Time (Minutes)": 36.1
+  },
+  "income": {
+    "Less than $25,000": 42.2,
+    "$25,000 to $49,999": 24.2,
+    "$50,000 to $74,999": 13.8,
+    "$75,000 to $99,999": 7.3,
+    "$100,000 to $149,999": 7.9,
+    "$150,000 and Over": 4.6,
+    "Median Income": 36360,
+    "Per Capita Income": 18503
+  }
+}

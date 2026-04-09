@@ -1,0 +1,38 @@
+{
+    "Population": {
+        "Total Population": 12087,
+        "Total Households": 5529,
+        "Average Household Size": 2.2
+    },
+    "Race": {
+        "White (Non-Hispanic)": 0.2,
+        "Hispanic or Latino (Any Race)": 4.1,
+        "Black (Non-Hispanic)": 94.3,
+        "Asian (Non-Hispanic)": 0.1,
+        "Other/Multiple Races (Non-Hispanic)": 1.2
+    },
+    "Car Ownership": {
+        "No Vehicle": 19.4,
+        "1 Vehicle": 47.9,
+        "2 Vehicles": 26.4,
+        "3+ Vehicles": 6.2
+    },
+    "Travel Mode": {
+        "Work at Home": 21.5,
+        "Drive Alone": 52.3,
+        "Carpool": 4.5,
+        "Transit": 19.5,
+        "Walk or Bike": 0.5,
+        "Other": 1.7
+    },
+    "Income": {
+        "Less than $25,000": 20.6,
+        "$25,000 to $49,999": 16.1,
+        "$50,000 to $74,999": 17.1,
+        "$75,000 to $99,999": 16.1,
+        "$100,000 to $149,999": 15.7,
+        "$150,000 and Over": 14.4,
+        "Median Income": 68436,
+        "Per Capita Income": 39867
+    }
+}

@@ -1,0 +1,39 @@
+{
+  "community": "Forest Glen",
+  "population": {
+    "total": 19855,
+    "households": 7033,
+    "average_household_size": 2.8
+  },
+  "race": {
+    "White (Non-Hispanic)": 73.5,
+    "Hispanic or Latino": 10.8,
+    "Black (Non-Hispanic)": 1.0,
+    "Asian (Non-Hispanic)": 11.0,
+    "Other/Multiple Races (Non-Hispanic)": 3.7
+  },
+  "car_ownership": {
+    "No vehicle": 5.0,
+    "1 vehicle": 32.7,
+    "2 vehicles": 44.1,
+    "3 or more vehicles": 18.2
+  },
+  "travel_mode": {
+    "Work at home": 17.2,
+    "Drive alone": 57.9,
+    "Carpool": 10.2,
+    "Transit": 10.5,
+    "Walk or bike": 3.1,
+    "Other": 1.1
+  },
+  "income": {
+    "Less than $25,000": 7.8,
+    "$25,000 to $49,999": 10.5,
+    "$50,000 to $74,999": 8.7,
+    "$75,000 to $99,999": 10.0,
+    "$100,000 to $149,999": 16.5,
+    "$150,000 and over": 46.5,
+    "Median income": 139046,
+    "Per capita income": 70693
+  }
+}

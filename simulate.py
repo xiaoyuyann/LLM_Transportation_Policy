@@ -11,6 +11,12 @@ Examples:
     # Chicago, Claude, ranked voting, 10 rounds
     python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10
 
+    # Chicago, GPT-4o, ranked voting WITH local demographic info (CHI-know)
+    python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode ranked --rounds 10 --info
+
+    # Chicago, Claude, ranked voting WITH local demographic info (CHI-know)
+    python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10 --info
+
     # Chicago, GPT-4o, approval voting (up to 5), 10 rounds
     python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode approval --rounds 10
 
@@ -28,7 +34,6 @@ Examples:
 """
 
 import argparse
-import sys
 from pathlib import Path
 
 
@@ -42,7 +47,7 @@ def parse_args() -> argparse.Namespace:
         "--city",
         required=True,
         choices=["chicago", "houston"],
-        help="City to simulate (chicago: 77 communities, 27 policies; houston: 88 neighborhoods, 24 policies).",
+        help="City to simulate (chicago: 77 communities, 27 policies; houston: 88 neighborhoods, 27 policies).",
     )
     parser.add_argument(
         "--model",
@@ -72,11 +77,21 @@ def parse_args() -> argparse.Namespace:
         help="Number of independent simulation rounds (default: 10).",
     )
     parser.add_argument(
+        "--info",
+        action="store_true",
+        default=False,
+        help=(
+            "Inject per-community demographic data into the user prompt (CHI-know variant). "
+            "Requires data/CA_info/<community>.json files. Only supported for --city chicago."
+        ),
+    )
+    parser.add_argument(
         "--output",
         default=None,
         help=(
             "Output directory. "
-            "Defaults to 'results/<city>_<model_short>_<mode>'."
+            "Defaults to 'results/<city>_<model_short>_<mode>' "
+            "or 'results/<city>_<model_short>_<mode>_info' when --info is set."
         ),
     )
     return parser.parse_args()
@@ -88,14 +103,16 @@ def main() -> None:
     # Build default output path if not specified
     if args.output is None:
         model_short = args.model.split("-")[0]  # e.g., "gpt" or "claude"
-        args.output = f"results/{args.city}_{model_short}_{args.mode}"
+        info_suffix = "_info" if args.info else ""
+        args.output = f"results/{args.city}_{model_short}_{args.mode}{info_suffix}"
 
-    print(f"LLM-FFT Simulation")
-    print(f"  City:   {args.city}")
-    print(f"  Model:  {args.model}")
-    print(f"  Mode:   {args.mode}")
-    print(f"  Rounds: {args.rounds}")
-    print(f"  Output: {args.output}")
+    print("LLM-FFT Simulation")
+    print(f"  City:        {args.city}")
+    print(f"  Model:       {args.model}")
+    print(f"  Mode:        {args.mode}")
+    print(f"  Rounds:      {args.rounds}")
+    print(f"  Local info:  {'yes (CHI-know)' if args.info else 'no'}")
+    print(f"  Output:      {args.output}")
     print()
 
     # Lazy import to avoid loading API keys before args are parsed
@@ -107,6 +124,7 @@ def main() -> None:
         mode=args.mode,
         rounds=args.rounds,
         output_dir=args.output,
+        use_info=args.info,
     )
 
 

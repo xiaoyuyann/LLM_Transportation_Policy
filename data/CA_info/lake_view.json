@@ -1,0 +1,39 @@
+{
+  "community": "Lake View",
+  "population": {
+    "total_population": 101739,
+    "total_households": 55720,
+    "average_household_size": 1.8
+  },
+  "race": {
+    "White (Non-Hispanic)": 74.8,
+    "Hispanic or Latino (of Any Race)": 9.7,
+    "Black (Non-Hispanic)": 4.3,
+    "Asian (Non-Hispanic)": 7.1,
+    "Other/Multiple Races (Non-Hispanic)": 4.1
+  },
+  "car_ownership": {
+    "No Vehicle Available": 39.6,
+    "1 Vehicle Available": 46.6,
+    "2 Vehicles Available": 11.9,
+    "3 or More Vehicles Available": 1.9
+  },
+  "travel_mode": {
+    "Work at Home": 27.9,
+    "Drive Alone": 24.8,
+    "Carpool": 2.8,
+    "Transit": 36.9,
+    "Walk or Bike": 6.3,
+    "Other": 1.2
+  },
+  "income": {
+    "Less than $25,000": 10.4,
+    "$25,000 to $49,999": 10.9,
+    "$50,000 to $74,999": 14.8,
+    "$75,000 to $99,999": 13.6,
+    "$100,000 to $149,999": 17.2,
+    "$150,000 and Over": 33.0,
+    "Median Income": 100625,
+    "Per Capita Income": 87044
+  }
+}

@@ -1,0 +1,102 @@
+{
+    "community": "Morgan Park",
+    "population": {
+        "total": 20724,
+        "households": 8414,
+        "average_household_size": 2.4
+    },
+    "race": {
+        "White (Non-Hispanic)": {
+            "count": 6215,
+            "percent": 30.0
+        },
+        "Hispanic or Latino (of Any Race)": {
+            "count": 834,
+            "percent": 4.0
+        },
+        "Black (Non-Hispanic)": {
+            "count": 12589,
+            "percent": 60.7
+        },
+        "Asian (Non-Hispanic)": {
+            "count": 211,
+            "percent": 1.0
+        },
+        "Other/Multiple Races (Non-Hispanic)": {
+            "count": 875,
+            "percent": 4.2
+        }
+    },
+    "car_ownership": {
+        "No vehicle available": {
+            "count": 951,
+            "percent": 11.3
+        },
+        "1 vehicle available": {
+            "count": 4124,
+            "percent": 49.0
+        },
+        "2 vehicles available": {
+            "count": 2416,
+            "percent": 28.7
+        },
+        "3 or more vehicles available": {
+            "count": 925,
+            "percent": 11.0
+        }
+    },
+    "travel_mode": {
+        "Work at home": {
+            "count": 1238,
+            "percent": 14.3
+        },
+        "Drive alone": {
+            "count": 5626,
+            "percent": 64.9
+        },
+        "Carpool": {
+            "count": 771,
+            "percent": 8.9
+        },
+        "Transit": {
+            "count": 822,
+            "percent": 9.5
+        },
+        "Walk or bike": {
+            "count": 45,
+            "percent": 0.5
+        },
+        "Other": {
+            "count": 172,
+            "percent": 2.0
+        }
+    },
+    "income": {
+        "Less than $25,000": {
+            "count": 1559,
+            "percent": 18.5
+        },
+        "$25,000 to $49,999": {
+            "count": 1770,
+            "percent": 21.0
+        },
+        "$50,000 to $74,999": {
+            "count": 1024,
+            "percent": 12.2
+        },
+        "$75,000 to $99,999": {
+            "count": 1136,
+            "percent": 13.5
+        },
+        "$100,000 to $149,999": {
+            "count": 1365,
+            "percent": 16.2
+        },
+        "$150,000 and over": {
+            "count": 1561,
+            "percent": 18.5
+        },
+        "median_income": 71683,
+        "per_capita_income": 39283
+    }
+}

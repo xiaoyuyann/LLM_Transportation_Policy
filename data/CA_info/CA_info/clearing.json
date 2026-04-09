@@ -1,0 +1,108 @@
+{
+  "community": "Clearing",
+  "population": {
+    "total_population": 24728,
+    "total_households": 8932,
+    "average_household_size": 2.8,
+    "percent_population_change": {
+      "2000-2010": 3.6,
+      "2010-2022": 6.9,
+      "2000-2022": 10.7
+    }
+  },
+  "race": {
+    "White (Non-Hispanic)": {
+      "count": 8939,
+      "percent": 36.1
+    },
+    "Hispanic or Latino": {
+      "count": 14882,
+      "percent": 60.2
+    },
+    "Black (Non-Hispanic)": {
+      "count": 461,
+      "percent": 1.9
+    },
+    "Asian (Non-Hispanic)": {
+      "count": 169,
+      "percent": 0.7
+    },
+    "Other/Multiple Races (Non-Hispanic)": {
+      "count": 277,
+      "percent": 1.1
+    }
+  },
+  "car_ownership": {
+    "No Vehicle": {
+      "count": 711,
+      "percent": 8.0
+    },
+    "1 Vehicle": {
+      "count": 3289,
+      "percent": 36.8
+    },
+    "2 Vehicles": {
+      "count": 3540,
+      "percent": 39.6
+    },
+    "3+ Vehicles": {
+      "count": 1392,
+      "percent": 15.6
+    }
+  },
+  "travel_mode": {
+    "Work at Home": {
+      "count": 808,
+      "percent": 7.0
+    },
+    "Drive Alone": {
+      "count": 8525,
+      "percent": 74.1
+    },
+    "Carpool": {
+      "count": 861,
+      "percent": 7.5
+    },
+    "Transit": {
+      "count": 789,
+      "percent": 6.9
+    },
+    "Walk or Bike": {
+      "count": 357,
+      "percent": 3.1
+    },
+    "Other": {
+      "count": 160,
+      "percent": 1.4
+    },
+    "Mean Commute Time (minutes)": 31.9
+  },
+  "income": {
+    "Less than $25,000": {
+      "count": 1171,
+      "percent": 13.1
+    },
+    "$25,000 to $49,999": {
+      "count": 1764,
+      "percent": 19.7
+    },
+    "$50,000 to $74,999": {
+      "count": 1600,
+      "percent": 17.9
+    },
+    "$75,000 to $99,999": {
+      "count": 1030,
+      "percent": 11.5
+    },
+    "$100,000 to $149,999": {
+      "count": 1965,
+      "percent": 22.0
+    },
+    "$150,000 and Over": {
+      "count": 1402,
+      "percent": 15.7
+    },
+    "Median Household Income": 73778,
+    "Per Capita Income": 33089
+  }
+}

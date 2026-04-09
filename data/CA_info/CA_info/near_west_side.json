@@ -1,0 +1,39 @@
+{
+    "community": "Near West Side",
+    "population": {
+        "total": 65581,
+        "households": 32429,
+        "average_household_size": 1.9
+    },
+    "race": {
+        "white_non_hispanic": 43.4,
+        "hispanic_or_latino": 10.3,
+        "black_non_hispanic": 24.3,
+        "asian_non_hispanic": 17.7,
+        "other_multiple_races_non_hispanic": 4.4
+    },
+    "car_ownership": {
+        "no_vehicle": 34.3,
+        "one_vehicle": 50.9,
+        "two_vehicles": 13.5,
+        "three_or_more_vehicles": 1.3
+    },
+    "travel_mode_to_work": {
+        "work_at_home": 22.1,
+        "drive_alone": 30.7,
+        "carpool": 3.2,
+        "transit": 18.1,
+        "walk_or_bike": 24.1,
+        "other": 1.8
+    },
+    "income_distribution": {
+        "less_than_25000": 17.9,
+        "25000_to_49999": 11.2,
+        "50000_to_74999": 8.4,
+        "75000_to_99999": 9.7,
+        "100000_to_149999": 17.5,
+        "150000_and_over": 35.4,
+        "median_income": 106955,
+        "per_capita_income": 72602
+    }
+}

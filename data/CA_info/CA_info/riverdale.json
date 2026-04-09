@@ -1,0 +1,102 @@
+{
+  "population": {
+    "total_population": 10528,
+    "total_households": 3803,
+    "average_household_size": 2.8
+  },
+  "race": {
+    "White (Non-Hispanic)": {
+      "count": 228,
+      "percent": 2.2
+    },
+    "Hispanic or Latino (of Any Race)": {
+      "count": 932,
+      "percent": 8.9
+    },
+    "Black (Non-Hispanic)": {
+      "count": 9215,
+      "percent": 87.5
+    },
+    "Asian (Non-Hispanic)": {
+      "count": 15,
+      "percent": 0.1
+    },
+    "Other/Multiple Races (Non-Hispanic)": {
+      "count": 138,
+      "percent": 1.3
+    }
+  },
+  "car_ownership": {
+    "No Vehicle": {
+      "count": 739,
+      "percent": 19.4
+    },
+    "1 Vehicle": {
+      "count": 1670,
+      "percent": 43.9
+    },
+    "2 Vehicles": {
+      "count": 1029,
+      "percent": 27.1
+    },
+    "3 or More Vehicles": {
+      "count": 365,
+      "percent": 9.6
+    }
+  },
+  "travel_mode": {
+    "Work at Home": {
+      "count": 190,
+      "percent": 5.0
+    },
+    "Drive Alone": {
+      "count": 2573,
+      "percent": 67.9
+    },
+    "Carpool": {
+      "count": 305,
+      "percent": 8.0
+    },
+    "Transit": {
+      "count": 490,
+      "percent": 12.9
+    },
+    "Walk or Bike": {
+      "count": 114,
+      "percent": 3.0
+    },
+    "Other": {
+      "count": 117,
+      "percent": 3.1
+    },
+    "Mean Commute Time (minutes)": 33.8
+  },
+  "income": {
+    "Less than $25,000": {
+      "count": 1285,
+      "percent": 33.8
+    },
+    "$25,000 to $49,999": {
+      "count": 929,
+      "percent": 24.4
+    },
+    "$50,000 to $74,999": {
+      "count": 628,
+      "percent": 16.5
+    },
+    "$75,000 to $99,999": {
+      "count": 508,
+      "percent": 13.4
+    },
+    "$100,000 to $149,999": {
+      "count": 267,
+      "percent": 7.0
+    },
+    "$150,000 and Over": {
+      "count": 186,
+      "percent": 4.9
+    },
+    "Median Income": 41144,
+    "Per Capita Income": 19721
+  }
+}

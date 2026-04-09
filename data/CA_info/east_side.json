@@ -1,0 +1,41 @@
+{
+  "community": "East Side",
+  "population": {
+    "total": 23870,
+    "households": 7412,
+    "average_household_size": 3.2,
+    "population_change_2000_2022": 0.9
+  },
+  "race": {
+    "White (Non-Hispanic)": 11.2,
+    "Hispanic or Latino (Any Race)": 86.8,
+    "Black (Non-Hispanic)": 1.1,
+    "Asian (Non-Hispanic)": 0.2,
+    "Other/Multiple Races (Non-Hispanic)": 0.7
+  },
+  "car_ownership": {
+    "No Vehicle": 9.5,
+    "1 Vehicle": 37.1,
+    "2 Vehicles": 36.9,
+    "3 or More Vehicles": 16.5
+  },
+  "travel_mode": {
+    "Work at Home": 6.4,
+    "Drive Alone": 68.4,
+    "Carpool": 14.7,
+    "Transit": 7.7,
+    "Walk or Bike": 1.7,
+    "Other": 1.0,
+    "Mean Commute Time (min)": 36.4
+  },
+  "income": {
+    "Less than $25,000": 15.1,
+    "$25,000 to $49,999": 26.7,
+    "$50,000 to $74,999": 17.4,
+    "$75,000 to $99,999": 12.2,
+    "$100,000 to $149,999": 19.5,
+    "$150,000 and Over": 9.2,
+    "Median Household Income": 61898,
+    "Per Capita Income": 25646
+  }
+}

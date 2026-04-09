@@ -1,0 +1,102 @@
+{
+  "Community": "Roseland",
+  "Population": {
+    "Total Population": 37610,
+    "Total Households": 13854,
+    "Average Household Size": 2.7
+  },
+  "Race and Ethnicity": {
+    "White (Non-Hispanic)": {
+      "Count": 528,
+      "Percent": 1.4
+    },
+    "Hispanic or Latino (Any Race)": {
+      "Count": 700,
+      "Percent": 1.9
+    },
+    "Black (Non-Hispanic)": {
+      "Count": 35495,
+      "Percent": 94.4
+    },
+    "Asian (Non-Hispanic)": {
+      "Count": 75,
+      "Percent": 0.2
+    },
+    "Other/Multiple Races (Non-Hispanic)": {
+      "Count": 812,
+      "Percent": 2.2
+    }
+  },
+  "Car Ownership": {
+    "No Vehicle": {
+      "Count": 3593,
+      "Percent": 25.9
+    },
+    "1 Vehicle": {
+      "Count": 5905,
+      "Percent": 42.6
+    },
+    "2 Vehicles": {
+      "Count": 2823,
+      "Percent": 20.4
+    },
+    "3 or More Vehicles": {
+      "Count": 1533,
+      "Percent": 11.1
+    }
+  },
+  "Travel Mode to Work": {
+    "Work at Home": {
+      "Count": 1290,
+      "Percent": 9.6
+    },
+    "Drive Alone": {
+      "Count": 7206,
+      "Percent": 53.9
+    },
+    "Carpool": {
+      "Count": 1631,
+      "Percent": 12.2
+    },
+    "Transit": {
+      "Count": 2692,
+      "Percent": 20.1
+    },
+    "Walk or Bike": {
+      "Count": 217,
+      "Percent": 1.6
+    },
+    "Other": {
+      "Count": 335,
+      "Percent": 2.5
+    }
+  },
+  "Income": {
+    "Less than $25,000": {
+      "Count": 3649,
+      "Percent": 26.3
+    },
+    "$25,000 to $49,999": {
+      "Count": 3294,
+      "Percent": 23.8
+    },
+    "$50,000 to $74,999": {
+      "Count": 2458,
+      "Percent": 17.7
+    },
+    "$75,000 to $99,999": {
+      "Count": 1775,
+      "Percent": 12.8
+    },
+    "$100,000 to $149,999": {
+      "Count": 1703,
+      "Percent": 12.3
+    },
+    "$150,000 and Over": {
+      "Count": 975,
+      "Percent": 7.0
+    },
+    "Median Income": 49808,
+    "Per Capita Income": 24754
+  }
+}

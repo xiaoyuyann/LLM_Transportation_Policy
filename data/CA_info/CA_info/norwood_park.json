@@ -1,0 +1,102 @@
+{
+  "area": "Norwood Park",
+  "population": {
+    "total": 39641,
+    "households": 15182,
+    "average_household_size": 2.6
+  },
+  "race": {
+    "White (Non-Hispanic)": {
+      "count": 27553,
+      "percent": 69.5
+    },
+    "Hispanic or Latino (Any Race)": {
+      "count": 7819,
+      "percent": 19.7
+    },
+    "Black (Non-Hispanic)": {
+      "count": 373,
+      "percent": 0.9
+    },
+    "Asian (Non-Hispanic)": {
+      "count": 2798,
+      "percent": 7.1
+    },
+    "Other/Multiple Races (Non-Hispanic)": {
+      "count": 1097,
+      "percent": 2.8
+    }
+  },
+  "car_ownership": {
+    "no_vehicle": {
+      "count": 1175,
+      "percent": 7.7
+    },
+    "one_vehicle": {
+      "count": 5390,
+      "percent": 35.5
+    },
+    "two_vehicles": {
+      "count": 6260,
+      "percent": 41.2
+    },
+    "three_or_more_vehicles": {
+      "count": 2368,
+      "percent": 15.6
+    }
+  },
+  "travel_mode": {
+    "work_at_home": {
+      "count": 1840,
+      "percent": 9.7
+    },
+    "drive_alone": {
+      "count": 13514,
+      "percent": 71.1
+    },
+    "carpool": {
+      "count": 1734,
+      "percent": 9.1
+    },
+    "transit": {
+      "count": 1386,
+      "percent": 7.3
+    },
+    "walk_or_bike": {
+      "count": 420,
+      "percent": 2.2
+    },
+    "other": {
+      "count": 105,
+      "percent": 0.6
+    }
+  },
+  "income": {
+    "less_than_25000": {
+      "count": 1761,
+      "percent": 11.6
+    },
+    "25000_to_49999": {
+      "count": 2056,
+      "percent": 13.5
+    },
+    "50000_to_74999": {
+      "count": 1645,
+      "percent": 10.8
+    },
+    "75000_to_99999": {
+      "count": 1617,
+      "percent": 10.6
+    },
+    "100000_to_149999": {
+      "count": 3257,
+      "percent": 21.5
+    },
+    "150000_and_over": {
+      "count": 4846,
+      "percent": 31.9
+    },
+    "median_income": 107122,
+    "per_capita_income": 49303
+  }
+}

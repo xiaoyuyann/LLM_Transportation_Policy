@@ -1,0 +1,103 @@
+{
+  "community": "East Garfield Park",
+  "population": {
+    "total": 19901,
+    "households": 7384,
+    "average_household_size": 2.6
+  },
+  "race": {
+    "white_non_hispanic": {
+      "count": 1136,
+      "percent": 5.7
+    },
+    "hispanic_or_latino": {
+      "count": 1547,
+      "percent": 7.8
+    },
+    "black_non_hispanic": {
+      "count": 16672,
+      "percent": 83.8
+    },
+    "asian_non_hispanic": {
+      "count": 35,
+      "percent": 0.2
+    },
+    "other_multiple_non_hispanic": {
+      "count": 511,
+      "percent": 2.6
+    }
+  },
+  "car_ownership": {
+    "no_vehicle": {
+      "count": 2954,
+      "percent": 40.0
+    },
+    "one_vehicle": {
+      "count": 3097,
+      "percent": 41.9
+    },
+    "two_vehicles": {
+      "count": 945,
+      "percent": 12.8
+    },
+    "three_or_more_vehicles": {
+      "count": 388,
+      "percent": 5.3
+    }
+  },
+  "travel_mode": {
+    "work_at_home": {
+      "count": 417,
+      "percent": 6.0
+    },
+    "drive_alone": {
+      "count": 3546,
+      "percent": 51.0
+    },
+    "carpool": {
+      "count": 773,
+      "percent": 11.1
+    },
+    "transit": {
+      "count": 1739,
+      "percent": 25.0
+    },
+    "walk_or_bike": {
+      "count": 216,
+      "percent": 3.1
+    },
+    "other": {
+      "count": 268,
+      "percent": 3.9
+    },
+    "mean_commute_time_minutes": 35.1
+  },
+  "income": {
+    "less_than_25000": {
+      "count": 3227,
+      "percent": 43.7
+    },
+    "25000_to_49999": {
+      "count": 1602,
+      "percent": 21.7
+    },
+    "50000_to_74999": {
+      "count": 678,
+      "percent": 9.2
+    },
+    "75000_to_99999": {
+      "count": 662,
+      "percent": 9.0
+    },
+    "100000_to_149999": {
+      "count": 667,
+      "percent": 9.0
+    },
+    "150000_and_over": {
+      "count": 548,
+      "percent": 7.4
+    },
+    "median_income": 31762,
+    "per_capita_income": 20343
+  }
+}

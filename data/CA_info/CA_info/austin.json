@@ -1,0 +1,40 @@
+{
+    "community": "Austin",
+    "population": {
+        "total_population": 100120,
+        "total_households": 35602,
+        "average_household_size": 2.8
+    },
+    "race_ethnicity": {
+        "white_non_hispanic": 5.4,
+        "hispanic_or_latino": 19.4,
+        "black_non_hispanic": 72.8,
+        "asian_non_hispanic": 0.6,
+        "other_multiple_non_hispanic": 1.7
+    },
+    "car_ownership": {
+        "no_vehicle": 30.6,
+        "one_vehicle": 39.8,
+        "two_vehicles": 20.1,
+        "three_or_more_vehicles": 9.5
+    },
+    "travel_mode_to_work": {
+        "work_at_home": 5.9,
+        "drive_alone": 56.9,
+        "carpool": 9.7,
+        "transit": 23.7,
+        "walk_or_bike": 2.4,
+        "other": 1.4,
+        "mean_commute_time_minutes": 37.1
+    },
+    "income": {
+        "less_than_25000": 35.2,
+        "25000_to_49999": 22.4,
+        "50000_to_74999": 14.5,
+        "75000_to_99999": 8.7,
+        "100000_to_149999": 10.8,
+        "150000_and_over": 8.5,
+        "median_income": 40086,
+        "per_capita_income": 23403
+    }
+}

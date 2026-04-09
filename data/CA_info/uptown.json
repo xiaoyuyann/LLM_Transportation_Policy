@@ -1,0 +1,102 @@
+{
+  "Community": "Uptown",
+  "Population": {
+    "Total": 57464,
+    "Households": 32040,
+    "Average Household Size": 1.7
+  },
+  "Race": {
+    "White (Non-Hispanic)": {
+      "Count": 30392,
+      "Percent": 52.9
+    },
+    "Hispanic or Latino": {
+      "Count": 8084,
+      "Percent": 14.1
+    },
+    "Black (Non-Hispanic)": {
+      "Count": 11160,
+      "Percent": 19.4
+    },
+    "Asian (Non-Hispanic)": {
+      "Count": 5507,
+      "Percent": 9.6
+    },
+    "Other/Multiple Races (Non-Hispanic)": {
+      "Count": 2321,
+      "Percent": 4.0
+    }
+  },
+  "Car Ownership (Vehicles Available per Household)": {
+    "No Vehicle": {
+      "Count": 13476,
+      "Percent": 42.1
+    },
+    "1 Vehicle": {
+      "Count": 14642,
+      "Percent": 45.7
+    },
+    "2 Vehicles": {
+      "Count": 3482,
+      "Percent": 10.9
+    },
+    "3 or More Vehicles": {
+      "Count": 440,
+      "Percent": 1.4
+    }
+  },
+  "Travel Mode to Work": {
+    "Work at Home": {
+      "Count": 8141,
+      "Percent": 22.3
+    },
+    "Drive Alone": {
+      "Count": 11841,
+      "Percent": 32.5
+    },
+    "Carpool": {
+      "Count": 1029,
+      "Percent": 2.8
+    },
+    "Transit": {
+      "Count": 12705,
+      "Percent": 34.9
+    },
+    "Walk or Bike": {
+      "Count": 2177,
+      "Percent": 6.0
+    },
+    "Other": {
+      "Count": 540,
+      "Percent": 1.5
+    }
+  },
+  "Income": {
+    "Less than $25,000": {
+      "Count": 7423,
+      "Percent": 23.2
+    },
+    "$25,000 to $49,999": {
+      "Count": 4929,
+      "Percent": 15.4
+    },
+    "$50,000 to $74,999": {
+      "Count": 5490,
+      "Percent": 17.1
+    },
+    "$75,000 to $99,999": {
+      "Count": 4273,
+      "Percent": 13.3
+    },
+    "$100,000 to $149,999": {
+      "Count": 4395,
+      "Percent": 13.7
+    },
+    "$150,000 and Over": {
+      "Count": 5530,
+      "Percent": 17.3
+    },
+    "Median Income": 66871,
+    "Per Capita Income": 49783
+  }
+}

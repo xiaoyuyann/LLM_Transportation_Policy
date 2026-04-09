@@ -1,0 +1,102 @@
+{
+    "community": "West Ridge",
+    "population": {
+        "total": 79265,
+        "households": 26516,
+        "average_household_size": 2.9
+    },
+    "race": {
+        "White (Non-Hispanic)": {
+            "count": 31506,
+            "percent": 39.7
+        },
+        "Hispanic or Latino (Any Race)": {
+            "count": 17540,
+            "percent": 22.1
+        },
+        "Black (Non-Hispanic)": {
+            "count": 9093,
+            "percent": 11.5
+        },
+        "Asian (Non-Hispanic)": {
+            "count": 16577,
+            "percent": 20.9
+        },
+        "Other/Multiple Races (Non-Hispanic)": {
+            "count": 4549,
+            "percent": 5.7
+        }
+    },
+    "car_ownership": {
+        "No Vehicle": {
+            "count": 3535,
+            "percent": 13.3
+        },
+        "1 Vehicle": {
+            "count": 12208,
+            "percent": 46.0
+        },
+        "2 Vehicles": {
+            "count": 8440,
+            "percent": 31.8
+        },
+        "3 or More Vehicles": {
+            "count": 2333,
+            "percent": 8.8
+        }
+    },
+    "travel_mode": {
+        "Work at Home": {
+            "count": 3618,
+            "percent": 10.5
+        },
+        "Drive Alone": {
+            "count": 20432,
+            "percent": 59.2
+        },
+        "Carpool": {
+            "count": 3446,
+            "percent": 10.0
+        },
+        "Transit": {
+            "count": 4316,
+            "percent": 12.5
+        },
+        "Walk or Bike": {
+            "count": 1788,
+            "percent": 5.2
+        },
+        "Other": {
+            "count": 907,
+            "percent": 2.6
+        }
+    },
+    "income": {
+        "Less than $25,000": {
+            "count": 4432,
+            "percent": 16.7
+        },
+        "$25,000 to $49,999": {
+            "count": 5489,
+            "percent": 20.7
+        },
+        "$50,000 to $74,999": {
+            "count": 4330,
+            "percent": 16.3
+        },
+        "$75,000 to $99,999": {
+            "count": 3654,
+            "percent": 13.8
+        },
+        "$100,000 to $149,999": {
+            "count": 4275,
+            "percent": 16.1
+        },
+        "$150,000 and Over": {
+            "count": 4336,
+            "percent": 16.4
+        },
+        "Median Income": 68091,
+        "Per Capita Income": 32132
+    }
+}

@@ -1,0 +1,103 @@
+{
+  "community": "Douglas",
+  "population": {
+    "total_population": 21355,
+    "total_households": 10475,
+    "average_household_size": 1.8
+  },
+  "race": {
+    "white_non_hispanic": {
+      "count": 2171,
+      "percent": 10.2
+    },
+    "hispanic_or_latino": {
+      "count": 1497,
+      "percent": 7.0
+    },
+    "black_non_hispanic": {
+      "count": 13757,
+      "percent": 64.4
+    },
+    "asian_non_hispanic": {
+      "count": 2822,
+      "percent": 13.2
+    },
+    "other_multiple_non_hispanic": {
+      "count": 1108,
+      "percent": 5.2
+    }
+  },
+  "car_ownership": {
+    "no_vehicle": {
+      "count": 4655,
+      "percent": 44.4
+    },
+    "one_vehicle": {
+      "count": 4503,
+      "percent": 43.0
+    },
+    "two_vehicles": {
+      "count": 1114,
+      "percent": 10.6
+    },
+    "three_or_more_vehicles": {
+      "count": 203,
+      "percent": 1.9
+    }
+  },
+  "travel_mode": {
+    "work_at_home": {
+      "count": 1249,
+      "percent": 14.5
+    },
+    "drive_alone": {
+      "count": 3476,
+      "percent": 40.3
+    },
+    "carpool": {
+      "count": 465,
+      "percent": 5.4
+    },
+    "transit": {
+      "count": 2274,
+      "percent": 26.4
+    },
+    "walk_or_bike": {
+      "count": 726,
+      "percent": 8.4
+    },
+    "other": {
+      "count": 426,
+      "percent": 4.9
+    },
+    "mean_commute_time_minutes": 31.8
+  },
+  "income": {
+    "less_than_25k": {
+      "count": 3649,
+      "percent": 34.8
+    },
+    "25k_to_50k": {
+      "count": 2046,
+      "percent": 19.5
+    },
+    "50k_to_75k": {
+      "count": 1655,
+      "percent": 15.8
+    },
+    "75k_to_100k": {
+      "count": 1081,
+      "percent": 10.3
+    },
+    "100k_to_150k": {
+      "count": 979,
+      "percent": 9.3
+    },
+    "above_150k": {
+      "count": 1065,
+      "percent": 10.2
+    },
+    "median_income": 43528,
+    "per_capita_income": 35007
+  }
+}

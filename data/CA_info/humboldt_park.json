@@ -1,0 +1,103 @@
+{
+    "community": "Humboldt Park",
+    "population": {
+        "total_population": 55416,
+        "total_households": 18763,
+        "average_household_size": 2.9
+    },
+    "race_ethnicity": {
+        "white_non_hispanic": {
+            "count": 6527,
+            "percent": 11.8
+        },
+        "hispanic_or_latino": {
+            "count": 27617,
+            "percent": 49.8
+        },
+        "black_non_hispanic": {
+            "count": 19155,
+            "percent": 34.6
+        },
+        "asian_non_hispanic": {
+            "count": 1232,
+            "percent": 2.2
+        },
+        "other_multiple_races": {
+            "count": 885,
+            "percent": 1.6
+        }
+    },
+    "car_ownership": {
+        "no_vehicle": {
+            "count": 4688,
+            "percent": 25.0
+        },
+        "one_vehicle": {
+            "count": 7652,
+            "percent": 40.8
+        },
+        "two_vehicles": {
+            "count": 4449,
+            "percent": 23.7
+        },
+        "three_or_more_vehicles": {
+            "count": 1974,
+            "percent": 10.5
+        }
+    },
+    "travel_mode_to_work": {
+        "work_at_home": {
+            "count": 2278,
+            "percent": 9.3
+        },
+        "drive_alone": {
+            "count": 12939,
+            "percent": 52.9
+        },
+        "carpool": {
+            "count": 2761,
+            "percent": 11.3
+        },
+        "transit": {
+            "count": 4907,
+            "percent": 20.1
+        },
+        "walk_or_bike": {
+            "count": 1306,
+            "percent": 5.3
+        },
+        "other": {
+            "count": 256,
+            "percent": 1.0
+        },
+        "mean_commute_time_minutes": 35.7
+    },
+    "household_income": {
+        "less_than_25k": {
+            "count": 4698,
+            "percent": 25.0
+        },
+        "25k_to_50k": {
+            "count": 4507,
+            "percent": 24.0
+        },
+        "50k_to_75k": {
+            "count": 3330,
+            "percent": 17.7
+        },
+        "75k_to_100k": {
+            "count": 1921,
+            "percent": 10.2
+        },
+        "100k_to_150k": {
+            "count": 2276,
+            "percent": 12.1
+        },
+        "above_150k": {
+            "count": 2031,
+            "percent": 10.8
+        },
+        "median_income": 51105,
+        "per_capita_income": 25358
+    }
+}

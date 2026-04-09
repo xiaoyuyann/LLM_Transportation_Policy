@@ -332,6 +332,7 @@ Candidate policy options (estimated by {agency}):
 {policy_options}
 
 Evaluate these {num_policies} policy combinations for the {community} {community_label}.
+{community_info}
 Consider:
   1. The disposable income of {community}
   2. The discretionary consumption of {community}

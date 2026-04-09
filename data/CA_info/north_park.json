@@ -1,0 +1,40 @@
+{
+    "community": "North Park",
+    "population": {
+        "total": 19398,
+        "households": 6812,
+        "average_household_size": 2.8
+    },
+    "race": {
+        "White (Non-Hispanic)": 44.5,
+        "Hispanic or Latino (of Any Race)": 17.6,
+        "Black (Non-Hispanic)": 2.8,
+        "Asian (Non-Hispanic)": 31.4,
+        "Other/Multiple Races (Non-Hispanic)": 3.6
+    },
+    "car_ownership": {
+        "No vehicle available": 14.6,
+        "1 vehicle available": 46.2,
+        "2 vehicles available": 30.7,
+        "3 or more vehicles available": 8.5
+    },
+    "travel_mode": {
+        "Work at home": 13.1,
+        "Drive alone": 55.6,
+        "Carpool": 5.5,
+        "Transit": 17.5,
+        "Walk or bike": 4.8,
+        "Other": 3.4,
+        "Mean commute time (minutes)": 34.0
+    },
+    "income": {
+        "Less than $25,000": 17.7,
+        "$25,000 to $49,999": 16.6,
+        "$50,000 to $74,999": 15.9,
+        "$75,000 to $99,999": 11.1,
+        "$100,000 to $149,999": 15.5,
+        "$150,000 and Over": 23.2,
+        "Median Income": 74649,
+        "Per Capita Income": 37156
+    }
+}

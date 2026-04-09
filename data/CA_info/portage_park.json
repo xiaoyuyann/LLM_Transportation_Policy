@@ -1,0 +1,40 @@
+{
+  "community": "Portage Park",
+  "population": {
+    "total": 64213,
+    "households": 22995,
+    "average_household_size": 2.8
+  },
+  "race": {
+    "White (Non-Hispanic)": 46.7,
+    "Hispanic or Latino": 42.9,
+    "Black (Non-Hispanic)": 1.7,
+    "Asian (Non-Hispanic)": 5.8,
+    "Other/Multiple Races (Non-Hispanic)": 3.0
+  },
+  "car_ownership": {
+    "No vehicle": 10.1,
+    "1 vehicle": 41.2,
+    "2 vehicles": 34.2,
+    "3 or more vehicles": 14.5
+  },
+  "travel_mode": {
+    "Work at Home": 11.5,
+    "Drive Alone": 62.9,
+    "Carpool": 8.5,
+    "Transit": 14.0,
+    "Walk or Bike": 1.7,
+    "Other": 1.5,
+    "Mean Commute Time (minutes)": 37.1
+  },
+  "income": {
+    "Less than $25,000": 12.4,
+    "$25,000 to $49,999": 18.4,
+    "$50,000 to $74,999": 13.5,
+    "$75,000 to $99,999": 13.6,
+    "$100,000 to $149,999": 18.2,
+    "$150,000 and Over": 23.9,
+    "Median Income": 85473,
+    "Per Capita Income": 38488
+  }
+}

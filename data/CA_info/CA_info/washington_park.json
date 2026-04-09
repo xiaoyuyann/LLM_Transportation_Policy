@@ -1,0 +1,103 @@
+{
+  "community": "Washington Park",
+  "population": {
+    "total": 12366,
+    "households": 5279,
+    "average_household_size": 2.3
+  },
+  "race": {
+    "white_non_hispanic": {
+      "count": 230,
+      "percent": 1.9
+    },
+    "hispanic_or_latino": {
+      "count": 171,
+      "percent": 1.4
+    },
+    "black_non_hispanic": {
+      "count": 11594,
+      "percent": 93.8
+    },
+    "asian_non_hispanic": {
+      "count": 0,
+      "percent": 0.0
+    },
+    "other_multiple_races": {
+      "count": 371,
+      "percent": 3.0
+    }
+  },
+  "car_ownership": {
+    "no_vehicle": {
+      "count": 2261,
+      "percent": 42.8
+    },
+    "one_vehicle": {
+      "count": 2297,
+      "percent": 43.5
+    },
+    "two_vehicles": {
+      "count": 415,
+      "percent": 7.9
+    },
+    "three_or_more_vehicles": {
+      "count": 306,
+      "percent": 5.8
+    }
+  },
+  "travel_mode": {
+    "work_at_home": {
+      "count": 757,
+      "percent": 16.4
+    },
+    "drive_alone": {
+      "count": 2049,
+      "percent": 44.3
+    },
+    "carpool": {
+      "count": 159,
+      "percent": 3.4
+    },
+    "transit": {
+      "count": 1495,
+      "percent": 32.3
+    },
+    "walk_or_bike": {
+      "count": 54,
+      "percent": 1.2
+    },
+    "other": {
+      "count": 115,
+      "percent": 2.5
+    },
+    "mean_commute_time_minutes": 38.4
+  },
+  "income": {
+    "less_than_25k": {
+      "count": 2603,
+      "percent": 49.3
+    },
+    "25k_to_49k": {
+      "count": 1012,
+      "percent": 19.2
+    },
+    "50k_to_74k": {
+      "count": 418,
+      "percent": 7.9
+    },
+    "75k_to_99k": {
+      "count": 603,
+      "percent": 11.4
+    },
+    "100k_to_149k": {
+      "count": 394,
+      "percent": 7.5
+    },
+    "150k_and_over": {
+      "count": 249,
+      "percent": 4.7
+    },
+    "median_income": 26014,
+    "per_capita_income": 19948
+  }
+}

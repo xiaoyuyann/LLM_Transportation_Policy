@@ -1,0 +1,72 @@
+{
+    "community": "South Lawndale",
+    "population": {
+        "total": 69708,
+        "households": 20185,
+        "average_household_size": 3.0
+    },
+    "race": {
+        "white_non_hispanic": {
+            "count": 3757,
+            "percent": 5.4
+        },
+        "hispanic_or_latino": {
+            "count": 57024,
+            "percent": 81.8
+        },
+        "black_non_hispanic": {
+            "count": 8068,
+            "percent": 11.6
+        },
+        "asian_non_hispanic": {
+            "count": 562,
+            "percent": 0.8
+        },
+        "other_multiple_non_hispanic": {
+            "count": 297,
+            "percent": 0.4
+        }
+    },
+    "car_ownership": {
+        "no_vehicle": 4238,
+        "one_vehicle": 8961,
+        "two_vehicles": 4425,
+        "three_or_more_vehicles": 2561
+    },
+    "travel_mode": {
+        "work_at_home": {
+            "count": 1629,
+            "percent": 6.7
+        },
+        "drive_alone": {
+            "count": 13735,
+            "percent": 56.5
+        },
+        "carpool": {
+            "count": 3277,
+            "percent": 13.5
+        },
+        "transit": {
+            "count": 3727,
+            "percent": 15.3
+        },
+        "walk_or_bike": {
+            "count": 1654,
+            "percent": 6.8
+        },
+        "other": {
+            "count": 305,
+            "percent": 1.3
+        }
+    },
+    "income": {
+        "less_than_25000": 5247,
+        "25000_to_49999": 6463,
+        "50000_to_74999": 3242,
+        "75000_to_99999": 1757,
+        "100000_to_149999": 1791,
+        "150000_or_more": 1685,
+        "median_income": 42010,
+        "per_capita_income": 18001
+    }
+}

@@ -66,13 +66,44 @@ def _load_policy_list(city: str) -> tuple[pd.DataFrame, list[str]]:
     return df, policy_strings
 
 
+def _load_community_info(community: str, info_dir: Path) -> str:
+    """
+    Load demographic/census JSON for a community and format it for the prompt.
+    Returns an empty string if no info file exists (graceful degradation).
+    """
+    filename = f"{community.lower().replace(' ', '_').replace('/', '&')}.json"
+    path = info_dir / filename
+    if not path.exists():
+        # Try a simpler sanitization (spaces→underscores, drop special chars)
+        plain = community.lower().replace(' ', '_').replace('/', '_').replace("'", '')
+        filename_plain = f"{plain}.json"
+        path = info_dir / filename_plain
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            return (
+                "Community demographic data (census):\n"
+                + json.dumps(data, indent=2, ensure_ascii=False)
+            )
+        except Exception as exc:
+            print(f"  [WARN] Could not read info for {community}: {exc}")
+    else:
+        print(f"  [WARN] No info file found for {community} (looked for {filename})")
+    return ""
+
+
 def _build_community_prompt(
     city: str,
     community: str,
     policy_options_str: str,
     mode: str,
+    info_dir: Path | None = None,
 ) -> tuple[str, str]:
-    """Build (system_prompt, user_prompt) for a single community agent."""
+    """Build (system_prompt, user_prompt) for a single community agent.
+
+    If info_dir is provided, demographic data from that directory is injected
+    into the user prompt (CHI-know / with-info variant).
+    """
     meta = CITY_META[city]
     b = meta["baseline"]
 
@@ -84,6 +115,10 @@ def _build_community_prompt(
         system = SYSTEM_PROMPT_APPROVAL_ALL[city]
     else:
         system = SYSTEM_PROMPT_RANKED[city]
+
+    community_info = ""
+    if info_dir is not None:
+        community_info = _load_community_info(community, info_dir)
 
     user = USER_PROMPT_TEMPLATE.format(
         num_communities=meta["num_communities"],
@@ -100,6 +135,7 @@ def _build_community_prompt(
         community=community,
         community_label=community_label,
         policy_index_range=meta["policy_index_range"],
+        community_info=community_info,
     )
     return system, user
 
@@ -139,12 +175,13 @@ def _run_community_round(
     mode: str,
     policy_options_str: str,
     round_dir: Path,
+    info_dir: Path | None = None,
 ) -> None:
     """Query every community agent and save individual JSON responses."""
     communities = COMMUNITIES[city]
     for community in communities:
         print(f"  Processing {community} ...")
-        system, user = _build_community_prompt(city, community, policy_options_str, mode)
+        system, user = _build_community_prompt(city, community, policy_options_str, mode, info_dir)
         response = client.complete(system, user)
         if response and {"community_area", "thinking", "vote"} <= response.keys():
             _save_response(community, response, round_dir)
@@ -260,6 +297,7 @@ def run_simulation(
     mode: str,
     rounds: int,
     output_dir: str,
+    use_info: bool = False,
 ) -> None:
     """
     Run the full LLM-based policy voting simulation.
@@ -267,14 +305,24 @@ def run_simulation(
     Args:
         city:       'chicago' or 'houston'
         model_name: LLM model identifier, e.g. 'gpt-4o-2024-08-06'
-        mode:       'ranked' | 'approval' | 'average'
+        mode:       'ranked' | 'approval' | 'approval-all' | 'average'
         rounds:     Number of independent simulation rounds
         output_dir: Root directory for all output files
+        use_info:   If True, inject per-community demographic data (from data/CA_info/)
+                    into the user prompt. Only supported for Chicago.
     """
     if city not in CITY_META:
         raise ValueError(f"Unknown city '{city}'. Choose from: {list(CITY_META)}")
     if mode not in ("ranked", "approval", "approval-all", "average"):
         raise ValueError(f"Unknown mode '{mode}'. Choose from: ranked, approval, approval-all, average")
+    if use_info and city != "chicago":
+        raise ValueError("--info is only supported for Chicago (data/CA_info/ contains Chicago data only).")
+
+    info_dir: Path | None = None
+    if use_info:
+        info_dir = Path(__file__).parent.parent / "data" / "CA_info"
+        if not info_dir.exists():
+            raise FileNotFoundError(f"CA_info directory not found at {info_dir}")
 
     base_dir = Path(output_dir)
     base_dir.mkdir(parents=True, exist_ok=True)
@@ -283,7 +331,7 @@ def run_simulation(
     meta_path = base_dir / "run_config.json"
     meta_path.write_text(
         json.dumps(
-            {"city": city, "model": model_name, "mode": mode, "rounds": rounds},
+            {"city": city, "model": model_name, "mode": mode, "rounds": rounds, "use_info": use_info},
             indent=2,
         )
     )
@@ -320,7 +368,7 @@ def run_simulation(
                 pd.DataFrame([row]).to_csv(csv_path, index=False)
                 print(f"  Vote: {vote}")
         else:
-            _run_community_round(city, client, mode, policy_options_joined, round_dir)
+            _run_community_round(city, client, mode, policy_options_joined, round_dir, info_dir)
             csv_path = _compile_community_responses(city, round_dir)
             irv_path = round_dir / "irv_summary.json"
             _aggregate_votes(csv_path, mode, irv_path)
