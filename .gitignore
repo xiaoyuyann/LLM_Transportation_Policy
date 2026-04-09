@@ -1,0 +1,18 @@
+# Environment & secrets
+.env
+
+# Results (generated at runtime, can be large)
+results/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
