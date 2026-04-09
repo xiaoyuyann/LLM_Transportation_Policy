@@ -110,7 +110,7 @@ python simulate.py \
 | Argument | Description |
 |---|---|
 | `--city` | `chicago` (77 communities, 27 policies) or `houston` (88 neighborhoods, 27 policies) |
-| `--model` | `gpt-4o-2024-08-06` or `claude-3-5-sonnet-20241022` |
+| `--model` | `gpt-4o-2024-08-06` or `claude-sonnet-4-5-20250929` |
 | `--mode` | `ranked` — per-community ranked top-5 → IRV; `approval` — per-community approve up to 5 (no rank); `approval-all` — per-community approve any number (no limit); `average` — single average-citizen agent |
 | `--rounds` | Number of independent simulation rounds (default: 10) |
 | `--info` | Inject per-community demographic data into the prompt (CHI-know variant). Only for `--city chicago`. Reads from `data/CA_info/`. |
@@ -129,31 +129,31 @@ The eight main experimental conditions from the paper can be reproduced with the
 python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode ranked --rounds 10
 
 # 2. Chicago — Claude-3.5-Sonnet — ranked voting (community agents)
-python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10
+python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode ranked --rounds 10
 
 # 3. Chicago — GPT-4o — ranked voting WITH local demographic info (CHI-know)
 python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode ranked --rounds 10 --info
 
 # 4. Chicago — Claude-3.5-Sonnet — ranked voting WITH local demographic info (CHI-know)
-python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10 --info
+python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode ranked --rounds 10 --info
 
 # 5. Chicago — GPT-4o — approval voting, up to 5 (community agents, no ranking)
 python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode approval --rounds 10
 
 # 6. Chicago — Claude-3.5-Sonnet — approval voting, up to 5 (community agents, no ranking)
-python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode approval --rounds 10
+python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode approval --rounds 10
 
 # 7. Chicago — GPT-4o — all-approval voting, unlimited (community agents, no ranking)
 python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode approval-all --rounds 10
 
 # 8. Chicago — Claude-3.5-Sonnet — all-approval voting, unlimited (community agents, no ranking)
-python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode approval-all --rounds 10
+python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode approval-all --rounds 10
 
 # 9. Chicago — GPT-4o — average-citizen baseline (single agent)
 python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode average --rounds 10
 
 # 10. Chicago — Claude-3.5-Sonnet — average-citizen baseline (single agent)
-python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode average --rounds 10
+python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode average --rounds 10
 ```
 
 ### Houston experiments
@@ -163,13 +163,13 @@ python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode aver
 python simulate.py --city houston --model gpt-4o-2024-08-06 --mode ranked --rounds 10
 
 # 12. Houston — Claude-3.5-Sonnet — ranked voting (neighborhood agents)
-python simulate.py --city houston --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10
+python simulate.py --city houston --model claude-sonnet-4-5-20250929 --mode ranked --rounds 10
 
 # 13. Houston — GPT-4o — all-approval voting, unlimited (neighborhood agents)
 python simulate.py --city houston --model gpt-4o-2024-08-06 --mode approval-all --rounds 10
 
 # 14. Houston — Claude-3.5-Sonnet — all-approval voting, unlimited (neighborhood agents)
-python simulate.py --city houston --model claude-3-5-sonnet-20241022 --mode approval-all --rounds 10
+python simulate.py --city houston --model claude-sonnet-4-5-20250929 --mode approval-all --rounds 10
 ```
 
 ---

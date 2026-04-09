@@ -9,28 +9,28 @@ Examples:
     python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode ranked --rounds 10
 
     # Chicago, Claude, ranked voting, 10 rounds
-    python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10
+    python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode ranked --rounds 10
 
     # Chicago, GPT-4o, ranked voting WITH local demographic info (CHI-know)
     python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode ranked --rounds 10 --info
 
     # Chicago, Claude, ranked voting WITH local demographic info (CHI-know)
-    python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10 --info
+    python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode ranked --rounds 10 --info
 
     # Chicago, GPT-4o, approval voting (up to 5), 10 rounds
     python simulate.py --city chicago --model gpt-4o-2024-08-06 --mode approval --rounds 10
 
     # Chicago, Claude, all-approval voting (unlimited approvals), 10 rounds
-    python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode approval-all --rounds 10
+    python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode approval-all --rounds 10
 
     # Chicago, Claude, average-citizen baseline, 10 rounds
-    python simulate.py --city chicago --model claude-3-5-sonnet-20241022 --mode average --rounds 10
+    python simulate.py --city chicago --model claude-sonnet-4-5-20250929 --mode average --rounds 10
 
     # Houston, GPT-4o, ranked voting, 10 rounds
     python simulate.py --city houston --model gpt-4o-2024-08-06 --mode ranked --rounds 10
 
     # Houston, Claude, ranked voting, 10 rounds
-    python simulate.py --city houston --model claude-3-5-sonnet-20241022 --mode ranked --rounds 10
+    python simulate.py --city houston --model claude-sonnet-4-5-20250929 --mode ranked --rounds 10
 """
 
 import argparse
@@ -55,7 +55,7 @@ def parse_args() -> argparse.Namespace:
         help=(
             "LLM model name. "
             "OpenAI: 'gpt-4o-2024-08-06'. "
-            "Anthropic: 'claude-3-5-sonnet-20241022'."
+            "Anthropic: 'claude-sonnet-4-5-20250929'."
         ),
     )
     parser.add_argument(

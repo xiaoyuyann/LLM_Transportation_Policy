@@ -20,7 +20,7 @@ class LLMClient:
 
     SUPPORTED_MODELS = {
         "openai": ["gpt-4o-2024-08-06", "gpt-4o-mini"],
-        "anthropic": ["claude-3-5-sonnet-20241022", "claude-3-opus-20240229"],
+        "anthropic": ["claude-sonnet-4-5-20250929", "claude-sonnet-4-6", "claude-opus-4-6"],
     }
 
     def __init__(self, model_name: str, temperature: float = 0, max_tokens: int = 2048):
