@@ -8,6 +8,7 @@ Usage:
 
 import json
 import os
+import re
 import traceback
 
 from dotenv import load_dotenv
@@ -23,7 +24,7 @@ class LLMClient:
         "anthropic": ["claude-sonnet-4-5-20250929", "claude-sonnet-4-6", "claude-opus-4-6"],
     }
 
-    def __init__(self, model_name: str, temperature: float = 0, max_tokens: int = 2048):
+    def __init__(self, model_name: str, temperature: float = 0, max_tokens: int = 4096):
         self.model_name = model_name
         self.temperature = temperature
         self.max_tokens = max_tokens
@@ -61,6 +62,24 @@ class LLMClient:
                 raise RuntimeError("ANTHROPIC_API_KEY not set. Add it to .env or your environment.")
             return anthropic.Anthropic(api_key=api_key)
 
+    @staticmethod
+    def _extract_json(text: str) -> str:
+        """
+        Strip markdown code fences that Claude sometimes wraps around JSON output,
+        e.g. ```json { ... } ``` or ``` { ... } ```.
+        Falls back to the raw text if no fence is found.
+        """
+        text = text.strip()
+        # Match ```json ... ``` or ``` ... ```
+        match = re.search(r"```(?:json)?\s*(\{.*\})\s*```", text, re.DOTALL)
+        if match:
+            return match.group(1).strip()
+        # Also handle a bare leading/trailing fence without closing
+        if text.startswith("```"):
+            text = re.sub(r"^```(?:json)?", "", text).strip()
+            text = re.sub(r"```$", "", text).strip()
+        return text
+
     def complete(self, system_prompt: str, user_prompt: str) -> dict | None:
         """
         Send a request to the LLM and return the parsed JSON response.
@@ -91,7 +110,7 @@ class LLMClient:
                     messages=[{"role": "user", "content": user_prompt}],
                 )
                 text = resp.content[0].text if hasattr(resp.content[0], "text") else str(resp.content[0])
-                return json.loads(text.strip())
+                return json.loads(self._extract_json(text))
 
         except Exception as exc:
             print(f"[ERROR] LLM request failed: {exc}")
