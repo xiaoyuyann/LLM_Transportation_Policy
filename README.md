@@ -280,6 +280,17 @@ A single LLM agent representing "the average resident" of the city votes, instea
 
 ## Citation
 
-If you use this code or data, please cite the accompanying paper.
+If you use this code, data, or experimental framework, please cite the following paper:
+
+```bibtex
+@article{yan2026addressing,
+  title={Addressing the alignment problem in transportation policy making: an LLM approach},
+  author={Yan, Xiaoyu and Dai, Tianxing and Nie, Yu Marco},
+  journal={Transportation Research Part C: Emerging Technologies},
+  volume={188},
+  pages={105686},
+  year={2026},
+  publisher={Elsevier}
+}
 
 Feel free to reach out if you have any questions, suggestions, or want to collaborate!
